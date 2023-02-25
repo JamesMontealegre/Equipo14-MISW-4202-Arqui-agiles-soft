@@ -1,6 +1,6 @@
 # Equipo14-MISW-4202-Arqui-agiles-soft
 
-Repositorio código fuente de experimentos Sincrono y Asincrono.
+Repositorio código fuente de experimentos el cual contiene dos carpetas uno para el Sincrono y otra para el Asincrono.
 
 # Instalacion: 
 
@@ -16,7 +16,4 @@ Para cada uno de los proyectos sincrono y asincrono se debe:
 9.    Microservicio_2: Comando **"flask run -p 5004"** (Carpeta microservicio_2) (Experimento Sincrono - Asincrono)
 10.   Microservicio_2: Comando **"flask run -p 5005"** (Carpeta microservicio_2) (Experimento Sincrono - Asincrono)
 
-Con estos pasos se inician los componentes necesarios para iniciar el experimento.
-
-
-
+Con estos pasos quedan listos e iniciados los componentes de acuerdo al experimento que se desee realizar.
