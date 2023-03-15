@@ -1,6 +1,6 @@
 from microservicio_ordenes import create_app
 from flask_restful import Api
-from .vistas import VistaOrdenCompra
+from .vistas import VistaOrdenCompra,VistaConultarOrdenCompra
 from .modelos import db
 
 app = create_app('default')
@@ -12,3 +12,4 @@ db.create_all()
 
 api = Api(app)
 api.add_resource(VistaOrdenCompra, '/ordencompra')
+api.add_resource(VistaConultarOrdenCompra, '/ordencompra/<int:id>')

@@ -7,9 +7,6 @@ orden_compra_schema = OrdenCompraSchema()
 
 class VistaOrdenCompra(Resource):
 
-    def get(self):
-        return 'Test Orden Compra OK'
-
     def post(self):
         cliente = request.json["cliente"]
         direccion = request.json["direccion"]
@@ -26,3 +23,8 @@ class VistaOrdenCompra(Resource):
         db.session.add(ordenCompra)
         db.session.commit()
         return orden_compra_schema.dump(ordenCompra)
+
+class VistaConultarOrdenCompra(Resource):
+
+    def get(self,id):
+        return  orden_compra_schema.dump(OrdenCompra.query.get_or_404(id))
