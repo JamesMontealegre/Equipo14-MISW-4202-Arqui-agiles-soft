@@ -5,6 +5,7 @@ from ..modelos import db, OrdenCompra, OrdenCompraSchema
 
 orden_compra_schema = OrdenCompraSchema()
 
+
 class VistaOrdenCompra(Resource):
 
     def post(self):
@@ -24,7 +25,5 @@ class VistaOrdenCompra(Resource):
         db.session.commit()
         return orden_compra_schema.dump(ordenCompra)
 
-class VistaConultarOrdenCompra(Resource):
-
-    def get(self,id):
-        return  orden_compra_schema.dump(OrdenCompra.query.get_or_404(id))
+    def get(self):
+        return [orden_compra_schema.dump(ordenCompra) for ordenCompra in OrdenCompra.query.all()]

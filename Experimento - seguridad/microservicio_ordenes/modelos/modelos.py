@@ -9,8 +9,8 @@ class OrdenCompra(db.Model):
     cliente = db.Column(db.String(50))
     direccion = db.Column(db.String(50))
     producto = db.Column(db.String(50))
-    precio = db.Column(db.Numeric)
-    cantidad = db.Column(db.Numeric)
+    precio = db.Column(db.String(50))
+    cantidad = db.Column(db.String(50))
     
 class OrdenCompraSchema(SQLAlchemyAutoSchema):
     class Meta:
@@ -21,5 +21,5 @@ class OrdenCompraSchema(SQLAlchemyAutoSchema):
     cliente = fields.String()
     direccion = fields.String()
     producto = fields.String()
-    precio = fields.Float()
-    cantidad = fields.Float()
+    precio = fields.String()
+    cantidad = fields.String()
