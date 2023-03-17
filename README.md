@@ -2,8 +2,9 @@
 
 Repositorio código fuente de experimentos el cual contiene dos carpetas uno para el Sincrono y otra para el Asincrono.
 
-# Instalacion: 
+# Disponibilidad 
 
+## Instalacion: 
 Para cada uno de los proyectos sincrono y asincrono se debe: 
 1. Crear los entornos virtuales. =>  Comando : **"python3 -m venv venv"**
 2. Activar los entornos viruales. => Comando : **".\venv\Scripts\activate"**
@@ -15,5 +16,18 @@ Para cada uno de los proyectos sincrono y asincrono se debe:
 8.    Microservicio_2: Comando **"flask run -p 5003"** (Carpeta microservicio_2) (Experimento Sincrono - Asincrono)
 9.    Microservicio_2: Comando **"flask run -p 5004"** (Carpeta microservicio_2) (Experimento Sincrono - Asincrono)
 10.   Microservicio_2: Comando **"flask run -p 5005"** (Carpeta microservicio_2) (Experimento Sincrono - Asincrono)
+
+Con estos pasos quedan listos e iniciados los componentes de acuerdo al experimento que se desee realizar.
+
+# Seguridad
+
+## Instalacion: 
+Para cada uno de los microservicios se debe: 
+1. Crear los entornos virtuales. =>  Comando : **"python3 -m venv venv"**
+2. Activar los entornos viruales. => Comando : **".\venv\Scripts\activate"**
+3. Instalar los requerimientos para cada proyecto : Comando **"pip install -r requirements.txt"**
+4. Iniciar cada uno de los servicios en el puertos así, segun experimento:
+5.    Api_Gateway: Comando **"flask run -p 5000"** (Carpeta Flaskr)
+6.    Microservicio_ordenes: Comando **"flask run -p 5001"** (Carpeta Microservicio_Ordenes)
 
 Con estos pasos quedan listos e iniciados los componentes de acuerdo al experimento que se desee realizar.
